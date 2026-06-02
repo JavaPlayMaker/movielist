@@ -1,6 +1,6 @@
 # MovieList (TMDB)
 
-Starter movie app using TMDB with Vite.
+React + TypeScript movie browser using TMDB, powered by Vite and Vitest.
 
 ## Setup
 
@@ -17,21 +17,28 @@ Starter movie app using TMDB with Vite.
 
    npm run dev
 
-4. Keep `.env` private. It is already ignored by `.gitignore`.
+4. Run tests:
+
+   npm test
+
+5. Keep `.env` private. It is already ignored by `.gitignore`.
+
+## Features
+
+- Popular movie list from TMDB
+- Genre filter chips
+- Movie title search bar
+- Pagination controls
+- Loading, empty, and error states
+- Typed API client with TypeScript interfaces
+- Vitest unit tests
 
 ## Project Structure
 
-- `index.html` - App entry file
+- `index.html` - Root HTML shell
 - `public/` - Static assets
-- `src/api/` - TMDB request logic
-- `src/components/` - Reusable UI components
-- `src/pages/` - Page-level views
+- `src/api/` - Typed TMDB API client
+- `src/components/` - Search bar, genre filter, movie grid
+- `src/types/` - Shared TypeScript types
 - `src/styles/` - Global/component styles
-- `src/utils/` - Helpers and utilities
-
-## Included Starter Files
-
-- `src/main.js` - Bootstraps loading and rendering
-- `src/api/tmdb.js` - Fetches popular movies from TMDB
-- `src/pages/home.js` - Renders movie cards
-- `src/styles/main.css` - Basic app styling
+- `src/utils/` - Helpers and tests
