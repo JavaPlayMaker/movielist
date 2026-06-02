@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { GenreFilter } from "./components/GenreFilter";
 import { MovieGrid } from "./components/MovieGrid";
 import { SearchBar } from "./components/SearchBar";
+import Footer from "./components/Footer";
 import { fetchGenres, fetchPopularMovies, searchMovies } from "./api/tmdb";
 import type { TmdbGenre, TmdbMovie } from "./types/tmdb";
 
@@ -120,6 +121,7 @@ function App() {
           Next
         </button>
       </footer>
+      <Footer />
     </main>
   );
 }
