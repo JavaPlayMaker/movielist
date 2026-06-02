@@ -19,7 +19,7 @@ export function SearchBar({ onSearch, initialValue = "" }: SearchBarProps) {
         type="search"
         value={value}
         onChange={(event) => setValue(event.target.value)}
-        placeholder="Search movies by title"
+        placeholder="Search movies by title - by JavaPlayMaker"
         aria-label="Search movies"
       />
       <button type="submit">Search</button>
