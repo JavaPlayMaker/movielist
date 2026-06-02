@@ -1,0 +1,71 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f7fb;
+  color: #161b22;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 10% 10%, #fff0c7 0%, #f6f7fb 45%, #e6edf7 100%);
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.app-header p {
+  margin: 8px 0 20px;
+  color: #4c5968;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.movie-card {
+  overflow: hidden;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.movie-card img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.movie-card-body {
+  padding: 10px 12px 14px;
+}
+
+.movie-card h2 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.movie-card p {
+  margin: 0;
+  color: #566273;
+}
+
+.status {
+  margin: 14px 2px 0;
+  min-height: 1.25rem;
+  color: #344251;
+}
